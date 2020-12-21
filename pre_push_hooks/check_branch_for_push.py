@@ -20,7 +20,7 @@ def is_on_branch(
         patterns: AbstractSet[str] = frozenset(),
 ) -> bool:
     """Checks if the remote reference is in the list of allowed patterns"""
-    print(f'branch info: {sys.stdin.buffer.read()})
+    print(f'branch info: {sys.stdin.buffer.read()}')
     ref = sys.stdin.buffer.read().decode()[2]
     if not ref:
         sys.exit(0)
